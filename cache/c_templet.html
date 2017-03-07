@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="utf-8"/>
-        <title>{$title}</title>
+        <title>豆瓣电影推荐测试</title>
         <style type="text/css">
             .ip {width:800px;}
             #result {
@@ -25,15 +25,15 @@
     </head>
     <body>
         <center>
-        <h2>{$title}</h2>
-        <p>{$content}</p>
-        <p>今天是：{$date}</p>
-        <form action="1.php" method="get">
+        <h2>豆瓣电影推荐测试</h2>
+        <p>粘贴豆瓣的电影链接，自动抓取推荐电影</p>
+        <p>今天是：2017-03-07</p>
+        <form action="index.php" method="get">
             输入url:<input class="ip" type="text" name="url"><br><br>
             <input type="submit" value="提交">
         </form>
         <div id="result">
-            {$result}
+            这里是推荐结果
         </div>
         </center>
     </body>

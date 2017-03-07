@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>{$title}</title>
+        <style type="text/css">
+            .ip {width:800px;}
+            #result {
+                border:2px solid black;
+                width:1000px;
+                height:600px;
+                padding:10px;
+            }
+            #result img{
+                max-width:100px;
+                min-height:150px;
+            }
+            #result dl{
+                float:left;
+                border:1px solid black;
+                width:150px;
+                height:200px;
+            }
+        </style>
+    </head>
+    <body>
+        <center>
+        <h2>{$title}</h2>
+        <p>{$content}</p>
+        <p>今天是：{$date}</p>
+        <form action="index.php" method="get">
+            输入url:<input class="ip" type="text" name="url"><br><br>
+            <input type="submit" value="提交">
+        </form>
+        <div id="result">
+            {$result}
+        </div>
+        </center>
+    </body>
+</html>
